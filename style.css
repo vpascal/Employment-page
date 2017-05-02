@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+h1#logo {
+	margin-top: 50px;
+}
+
+.w3-xxlarge {
+    font-size: 66px!important;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
