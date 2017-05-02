@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
 
 
 h1#logo {
@@ -6,7 +7,9 @@ h1#logo {
 }
 
 .w3-xxlarge {
-    font-size: 66px!important;
+    font-size: 75px!important;
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 75px;
+    font-weight: 700;
 }
