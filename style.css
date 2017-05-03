@@ -52,6 +52,45 @@ p {
 }
 
 
+@media screen and (max-width:1025px) { 
+
+
+.w3-xxlarge {
+    font-size: 32px!important;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 33px;
+    font-weight: 700;
+}
+
+
+ }
+
+
+
+@media screen and (max-width:1000px) { 
+
+
+.w3-xxlarge {
+    font-size: 32px!important;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 33px;
+    font-weight: 700;
+}
+
+#textheader {
+  display: none;
+}
+#gauge  {
+  display: none;
+}
+
+ }
+
+
+
+
 
 #textheader{
 
