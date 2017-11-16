@@ -104,3 +104,7 @@ p {
   opacity: .25;
   animation: pulse 2s linear alternate infinite;
 }
+
+.w3-display-middle {
+    top: 40%;
+  }
