@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 
 h3{
   font-family: 'Montserrat', sans-serif;
@@ -108,3 +112,55 @@ p {
 .w3-display-middle {
     top: 40%;
   }
+
+
+
+
+
+#treemap {
+
+ height: 450px; 
+
+} 
+
+#bar {
+
+
+ height: 500px; 
+
+} 
+
+#mylegend {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px; 
+}
+
+#levelcontrol{
+
+  margin-top: 15px;
+}
+
+#level{
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+}
+
+.datasource {
+
+  margin-top: 15px;
+  
+  
+}
+
+
+#mylegend {
+    display: block;
+    width: 50%;
+    padding: 0;
+    line-height: inherit;
+    color: #333;
+    /* border: 0; */
+    border-bottom: 0px;
+}

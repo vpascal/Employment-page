@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://d3plus.org/js/d3.js"></script>
+<script src="https://d3plus.org/js/d3plus.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <body>
 
@@ -69,8 +72,18 @@
       
     </div>
   </div>
+<br>
+
+<div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Where do they work?</h3>
+    <p>At The Patton College of Education, our vision is simple. We aim to prepare the finest leaders and change agents for the diverse future of the education and human service professions. Already we produce graduate who are leader-educators and practitioners commited to creating change and meeting diverse human and social needs.
+    </p>
+  </div>
+
+ <div id="treemap"></div>
 
 </div>
+ 
 <script type="text/javascript">
 jQuery(document).ready(function(){
     jQuery(".titleWrapper").addClass("ready");
@@ -90,7 +103,63 @@ jQuery(".titleWrapper h1").each(function(){
     
 });
 
+//chart
 
+var visualization = d3plus.viz().container("#treemap");
+
+  d3.csv("finalother.csv", function(error, temp) {
+  if (error) return console.error(error);
+  console.log(temp);
+
+
+  temp.forEach(function(d) {
+    d3.keys(d).forEach(function(k){
+      if(k == "n"){
+        d[k] = +d[k]
+      }
+    })
+  })
+
+   visualization
+      .data(temp)
+      .type("tree_map")
+      .id(['naics2_descr','naics3_descr'])
+      .font({ "family": "Pathway Gothic One, sans-serif"})
+      .size({'solo': function(x){return x>10},'value': 'n'})
+      .labels({"align": "left", "valign": "top"})
+      .title("Employment by Sector")
+      .title({
+          "font" : { "family": "Montserrat, sans-serif",
+                      "size" : 16,
+                      "transform" : "uppercase"
+                      }
+        })
+      .tooltip({'children':0})   
+      .tooltip({"font" : { "family": "Raleway, sans-serif"} })
+      .tooltip({"sub": "desc"})
+      .mouse({            
+        
+        "click": function(value, viz){
+        if (value.naics2_descr != "Information") {return true;}
+      }  
+    }) 
+      .ui([
+      {
+        "label" : "Change View",
+        "type" : "button",
+        "value" : [{"NAICS 2 digit":"naics2_descr"},{"NAICS 3 digit":"naics3_descr"}],
+        "method" : function(value, viz){
+        if(value == "naics3_descr"){
+          viz.id({"value": "naics3_descr"}).draw();
+        }
+        else{
+          viz.id({"value" : ['naics2_descr','naics3_descr']}).draw();
+        }}}
+       ])
+     .draw()
+       
+})
+    
 
 
 
