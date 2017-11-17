@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
+h3{
+  font-family: 'Montserrat', sans-serif;
+}
 
 .w3-xxlarge {
     font-size: 68px!important;
@@ -83,9 +86,6 @@ p {
 }
 
  }
-
-
-
 
 
 #textheader{
