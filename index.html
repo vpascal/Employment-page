@@ -106,12 +106,9 @@ jQuery(".titleWrapper h1").each(function(){
 //chart
 
 var visualization = d3plus.viz().container("#treemap");
-
   d3.csv("finalother.csv", function(error, temp) {
   if (error) return console.error(error);
   console.log(temp);
-
-
   temp.forEach(function(d) {
     d3.keys(d).forEach(function(k){
       if(k == "n"){
@@ -119,7 +116,6 @@ var visualization = d3plus.viz().container("#treemap");
       }
     })
   })
-
    visualization
       .data(temp)
       .type("tree_map")
@@ -140,9 +136,10 @@ var visualization = d3plus.viz().container("#treemap");
       .mouse({            
         
         "click": function(value, viz){
-        if (value.naics2_descr != "Information") {return true;}
+        if (value.naics2_descr != "Information" & value.naics2_descr!='Manufacturing')  {return true;}
+     
       }  
-    }) 
+    })
       .ui([
       {
         "label" : "Change View",
