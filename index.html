@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>PCOE Graduates</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -159,6 +159,67 @@ var visualization = d3plus.viz().container("#treemap");
 })
     
 //chart bar
+
+var barviz = d3plus.viz().container("#bar");
+  d3.csv("employfinal.csv", function(error, temp) {
+  if (error) return console.error(error);
+  console.log(temp);
+  temp.forEach(function(d) {
+    d3.keys(d).forEach(function(k){
+      if(k == "College"){
+        d[k] = +d[k]
+      }
+    })
+  })
+   barviz
+      .data(temp)
+      .type("bar")
+      .id("Year")
+      .x({'value' : 'Period', 'label': {'font':{'size':16}}})
+      .y("College")
+      .time({"value": "Year", "solo": 2016})
+      .ui([
+      {
+        "label" : "Select Level",
+        "type" : "button",
+        "value" : [{"College":"College"},{"Undergraduate":"Undergraduate"}, {"Graduate":"Graduate"}],
+        "method" : function(value, viz){
+        if(value == "College"){
+          viz.data("employfinal.csv");
+          viz.y({"value": "College"})
+          viz.text({"value":"College"}).draw();
+        }
+        else if (value == "Undergraduate"){
+          viz.data("employfinal.csv");
+          viz.y({"value": "Undergraduate"})
+          viz.text({"value":"Undergraduate"}).draw();
+        }
+        else {
+          viz.data("employfinal.csv");
+          viz.y({"value": "Graduate"})
+          viz.text({"value":"Graduate"}).draw();
+        }
+        }
+      }
+       ])
+      .title("Percent Employed")
+      .title({
+      "sub": "Within one year and within six months after graduation.",
+      "total": false
+    })
+      .title({
+          "font" : { "family": "Montserrat, sans-serif",
+                      "size" : 16,
+                      "transform" : "uppercase"
+                      }
+        })
+      .tooltip({"font" : { "family": "Raleway, sans-serif"} })
+      .tooltip({"sub": "notes"})
+      .text("College")
+      .draw()
+
+       
+})
 
 
 
