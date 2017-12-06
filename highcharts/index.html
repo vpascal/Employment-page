@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<title>PCOE Graduates</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+<script type="text/javascript" src="https://code.highcharts.com/modules/data.js"></script>
+
+<link rel="stylesheet" href="style.css">
+<body>
+
+
+<script type="text/javascript">
+
+// ohio bar chart
+$(document).ready(function() {
+
+$.get('ohio.csv', function(csv) {
+    $('#ohio').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        data: {
+            csv: csv
+        },
+        title: {
+            text: 'Growth/Decline in Employment by Major Industry'
+        },
+        yAxis: {
+            title: {
+                text: 'Percent '
+            }
+        }
+    });
+});
+});
+
+</script>
+
+<div id="ohio" style="min-width: 310px; max-width: 800px; height: 600px; margin: 0 auto"></div>
+
+</body>
+</html>
