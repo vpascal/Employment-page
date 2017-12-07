@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title>PCOE Graduates</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://d3plus.org/js/d3.js"></script>
+<script src="https://d3plus.org/js/d3plus.js"></script>
+
+<link rel="stylesheet" href="style.css">
+<body>
+
+
+<div id="ohio" style="min-width: 710px; max-width: 1200px; height: 700px; margin: 0 auto"></div>
+
+<script type="text/javascript">
+
+var visualization = d3plus.viz()
+      .container("#ohio")
+      .data('sectors.csv')
+      .type("bar")
+      .id(['industry','subsector'])
+      .y('percent1')
+      .x('subsector')
+      .color('industry')
+      .order({"value": "industry"})
+      .legend({'filters':true,'data': false})
+      .draw()
+
+</script>
+</body>
+</html>

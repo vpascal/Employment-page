@@ -1,0 +1,89 @@
+industry,subsector,percent
+Natural Resources,"Agric., Forestry, Fishing & Hunting",-2.19
+Natural Resources,Mining,-8.11
+Construction,Construction of Buildings,6.31
+Construction,Heavy and Civil Engineering Construction,5.56
+Construction,Specialty Trade Contractors,8.69
+Manufacturing,Food Manufacturing,-1.03
+Manufacturing,Beverage and Tobacco Product Manufacturing,1.3
+Manufacturing,Wood Product Manufacturing,4.76
+Manufacturing,Paper Manufacturing,-1.01
+Manufacturing,Printing and Related Support Activities,-3.72
+Manufacturing,Chemical Manufacturing,-1.82
+Manufacturing,Plastics and Rubber Products Manufacturing,0.18
+Manufacturing,Nonmetallic Mineral Product Manufacturing,4.26
+Manufacturing,Primary Metal Manufacturing,-4.76
+Manufacturing,Fabricated Metal Product Manufacturing,-0.71
+Manufacturing,Machinery Manufacturing,-0.9
+Manufacturing,Computer and Electronic Product Manufacturing,-6.25
+Manufacturing,Electrical Equipment and Appliance Mfg.,-0.36
+Manufacturing,Transportation Equipment Manufacturing,2.8
+Manufacturing,Furniture and Related Product Manufacturing,5.88
+Manufacturing,Miscellaneous Manufacturing,-1.87
+Wholesale Trade,"Merchant Wholesalers, Durable Goods",1.41
+Wholesale Trade,"Merchant Wholesalers, Nondurable Goods",-2.09
+Wholesale Trade,Wholesale Electronic Markets & Agents & Brokers,4.36
+Retail,Motor Vehicle and Parts Dealers,3.21
+Retail,Furniture and Home Furnishings Stores,3.68
+Retail,Electronics and Appliance Stores,-0.58
+Retail,Building Mat./Garden Equip. & Supplies Dealers,2.1
+Retail,Food and Beverage Stores,-0.29
+Retail,Health and Personal Care Stores,-0.83
+Retail,Gasoline Stations,1.09
+Retail,Clothing and Clothing Accessories Stores,1.81
+Retail,"Sporting Goods, Hobby, Book, and Music Stores",-2.38
+Retail,General Merchandise Stores,1.81
+Retail,Miscellaneous Store Retailers,1.71
+Retail,Nonstore Retailers,4.92
+Transport. & Warehousing,Air Transportation,-3.85
+Transport. & Warehousing,Truck Transportation,2.88
+Transport. & Warehousing,Transit and Ground Passenger Transport,2.83
+Transport. & Warehousing,Support Activities for Transportation,4.1
+Transport. & Warehousing,Couriers and Messengers,-1.76
+Transport. & Warehousing,Warehousing and Storage,9.13
+Utilities,Utilities,-2.58
+Information,Publishing Industries,-5.6
+Information,Motion Picture and Sound Recording Industries,3.39
+Information,Broadcasting (except Internet),-3.13
+Information,Telecommunications,-0.82
+Information,"Data processing, hosting and related services",3.17
+Information,Other Information Services,1.75
+Finance & Insurance,Credit Intermediation and Related Activities,-1.85
+Finance & Insurance,"Securities, commodity contracts & investments",2.79
+Finance & Insurance,Insurance Carriers and Related Activities,3.95
+Real Estate,Real Estate Services,3.49
+Real Estate,Rental and Leasing Services,-2.81
+"Prof., Scientific &Technical Services",Legal Services,-2.17
+"Prof., Scientific &Technical Services",Accounting and Bookkeeping Services,-0.28
+"Prof., Scientific &Technical Services","Architectural, Engineering, and Related Services",3.49
+"Prof., Scientific &Technical Services",Specialized Design Services,5.97
+"Prof., Scientific &Technical Services",Computer Systems Design and Related Services,6
+"Prof., Scientific &Technical Services",Management and Technical Consulting Services,5.88
+"Prof., Scientific &Technical Services",Scientific Research and Development Services,5.7
+"Prof., Scientific &Technical Services",Advertising and Related Services,1.47
+"Prof., Scientific &Technical Services",Other Professional and Technical Services,6.02
+Admin. & Waste Services,Administrative and Support Services,0.55
+Admin. & Waste Services,Waste Management and Remediation Service,0.64
+Education,Elementary and Secondary Schools,-1.45
+Education,Junior Colleges,-6.97
+Education,"Colleges,Universities, and Professional Schools",1.56
+Education,Other Schools and Instruction,5.56
+Education,Educational Support Services,8.29
+Health Care & Social Assistance,Ambulatory Health Care Services,2.33
+Health Care & Social Assistance,Hospitals,1.99
+Health Care & Social Assistance,Nursing and Residential Care Facilities,1.32
+Health Care & Social Assistance,Social Assistance,8.58
+"Arts, Entmt. & Recreation",Performing Arts and Spectator Sports,4.17
+"Arts, Entmt. & Recreation","Museums, Historical Sites, and Similar Institution",1.61
+"Arts, Entmt. & Recreation","Amusement, Gambling, and Recreation Industries",2.07
+Accommod. & Food Services,Accommodation,5.28
+Accommod. & Food Services,Food Services and Drinking Places,5.25
+Other Services,Repair and Maintenance,4.04
+Other Services,Personal and Laundry Services,1.81
+Other Services,"Religious, Grantmaking, Civic, Professional, and Similar Organizations",0.09
+Other Services,Private Household,0.7
+Government,Postal Service,-1.77
+Government,"Federal Government, Excluding Post Office",-0.74
+Government,"State Govt, excluding Education & Hospitals",-2.28
+Government,"Local Govt, excluding Education & Hospitals",0.7
+Management of Companies,Management of Companies and Enterprises,2.17
