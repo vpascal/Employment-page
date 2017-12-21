@@ -130,16 +130,10 @@ p {
 } 
 
 #ohio{
-  height: 600px;
+  height: 700px;
 
 }
 
-
-#ohiodetail{
-
-  height: 600px;
-
-}
 
 
 #mylegend {
@@ -180,4 +174,11 @@ p {
 #notes{
 
       padding-left: 10px;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
 }
