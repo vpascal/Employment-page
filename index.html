@@ -87,12 +87,17 @@
  <br>
  <br>
  <div class="w3-row w3-padding-64">
+  <br>
+  <br>
   <h4 class="w3-center"> INDUSTRIES PROJECTED TO GROW/DECLINE IN OHIO BETWEEN 2016 AND 2018</h4>
     <hr>
-    <div  class="w3-col" style="width:60%" id='ohio'></div>
-    <div  class="w3-col" style="width:40%" id='ohiodetail'></div>
+    <div  class="w3-col" style="width:50%" id='ohio'></div>
+    <div  class="w3-col" style="width:50%" id='ohiodetail'></div>
+     <p class='w3-center' id ='source'>Source: Ohio Department of Job and Family Services, Bureau of Labor Market Information</p>
  </div>
  <br>
+   <h4 class="w3-center"> PCOE: GRADUATES - PERCENT EMPLOYED</h4>
+   <hr>
  <div class="w3-row">
     <div class='w3-twothird' id="bar"></div>
     <div class='w3-third' id='notes'>
@@ -187,12 +192,12 @@ var ohioviz = d3plus.viz().container("#ohio");
       .data(temp)
       .type("bar")
       .id(['industry','color'])
-      .y('percent')
-      .x('industry')
+      .x('percent')
+      .y({'value':'industry','scale':'discrete'})
       .color('color')
       .text("industry")
       .order({"value": "percent"})
-      .title('Industries')
+      .title({'value':'Industries'})
       .mouse({'click': function(value, viz){
             ohiodetail.id({'value':['industry','subsector'], 'solo': value.industry})
                       .draw()
@@ -211,18 +216,18 @@ var ohioviz = d3plus.viz().container("#ohio");
 
 
 
-// ohio detail
+// ohio bar chart detail
 var ohiodetail = d3plus.viz()
       .container("#ohiodetail")
       .data('sectors.csv')
       .type("bar")
       .id(['industry','subsector'])
-      .y({'value':'percent', 'range': [-10,10]})
-      .x('industry')
+      .x({'value':'percent', 'range': [-10,10]})
+      .y({'value':'industry','scale':'discrete'})
       .title('Subsectors')
       .depth(1)
       .text('subsector')
-      .order({"value": "industry"})
+      .order({"value": "percent"})
       .legend({'filters':true,'data': false})
       .font({"family": "Raleway, sans-serif" } )
     
