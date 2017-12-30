@@ -130,6 +130,30 @@ jQuery(".titleWrapper h1").each(function(){
 
 //chart treemap
 
+
+var attributes = [
+    {"naics2_descr": "Education", "hex": "#F24747"},
+    {"naics2_descr": "Retail", "hex": "#C5A233"},
+    {"naics2_descr": "Accommodation & Food Services", "hex": "#3F6662"},
+    {"naics2_descr": "Health Care & Social Assistance", "hex": "#187ED0"},
+    {"naics2_descr": "Arts, Entertainment, & Recreation", "hex": "#FDBA91"},
+    {"naics2_descr": "Admin. & Support & Waste Management & Remediation Services", "hex": "#C32B97"},
+    {"naics2_descr": "Other Services", "hex": "#FDBA70"},
+    {"naics2_descr": "Public Administration", "hex": "#5BA5D0"},
+    {"naics2_descr": "Professional, Scientific, & Technical Services", "hex": "#FBF096"},
+    {"naics2_descr": "Manufacturing", "hex": "#45778B"},
+    {"naics2_descr": "Finance & Insurance", "hex": "#E57352"},
+    {"naics2_descr": "Transportation & Warehousing", "hex": "#4233C5"},
+    {"naics2_descr": "Construction", "hex": "#C45532"},
+    {"naics2_descr": "Wholesale Trade", "hex": "#33C5B3"},
+    {"naics2_descr": "Information", "hex": "#956587"},
+    {"naics2_descr": "Real Estate & Rental & Leasing", "hex": "#B2BA89"},
+    {"naics2_descr": "Management of Companies & Enterprises", "hex": "#FFC7CE"},
+    {"naics2_descr": "Agriculture, Forestry, Fishing & Hunting", "hex": "#FFD4AA"},
+    {"naics2_descr": "Mining, Quarrying, & Oil & Gas Extraction", "hex": "#FFD4AA"}
+  ]
+
+
 var visualization = d3plus.viz().container("#treemap");
   d3.csv("finalother.csv", function(error, temp) {
   if (error) return console.error(error);
@@ -150,7 +174,13 @@ var visualization = d3plus.viz().container("#treemap");
       .labels({"align": "left", "valign": "top"})
       .tooltip({'children':0})   
       .tooltip({"font" : { "family": "Raleway, sans-serif"} })
+      //.attrs(attributes)
+      .color("naics2_descr")
       .tooltip({"sub": "desc"})
+     .icon({
+           "style": "knockout",
+           "value": "image"
+            })
       .mouse({            
         
         "click": function(value, viz){
@@ -165,10 +195,14 @@ var visualization = d3plus.viz().container("#treemap");
         "value" : [{"NAICS 2 digit":"naics2_descr"},{"NAICS 3 digit":"naics3_descr"}],
         "method" : function(value, viz){
         if(value == "naics3_descr"){
-          viz.id({"value": "naics3_descr"}).draw();
+          viz.id({"value": "naics3_descr"})
+          .draw();
         }
         else{
-          viz.id({"value" : ['naics2_descr','naics3_descr']}).draw();
+          viz.id({"value" : ['naics2_descr','naics3_descr']})
+        //.attrs(attributes)
+    	  //.color("hex")
+    	  .draw();
         }}}
        ])
      .draw()

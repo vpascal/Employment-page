@@ -1,79 +1,79 @@
-naics2_descr,naics3_descr,n
-Accommodation & Food Services,Accommodation,67
-Accommodation & Food Services,Food Services & Drinking Places,376
-Admin. & Support & Waste Management & Remediation Services,Administrative & Support Services,136
-Admin. & Support & Waste Management & Remediation Services,Waste Mangement & Remediation Services,3
-"Agriculture, Forestry, Fishing & Hunting",Animal production,2
-"Agriculture, Forestry, Fishing & Hunting",Crop production,3
-"Arts, Entertainment, & Recreation","Amusement, Gambling & Recreation",143
-"Arts, Entertainment, & Recreation","Museums, Historical Sites & Similar Institutions",14
-"Arts, Entertainment, & Recreation","Performing Arts, Spectator Sports & Other",12
-Construction,Construction of Buildings,5
-Construction,Specialty Trade Contractors,15
-Education,Educational Services,1808
-Finance & Insurance,Credit Intermediation & Related Activities,22
-Finance & Insurance,"Funds, Trusts & Other Financial Vehicles",1
-Finance & Insurance,Insurance Carriers & Other,12
-Finance & Insurance,"Securities, Commodity Contracts & Other Financial Investments & Related Activities",4
-Health Care & Social Assistance,Ambulatory Health Care Services,86
-Health Care & Social Assistance,Hospitals,23
-Health Care & Social Assistance,Nursing & Residential Care Facilities,46
-Health Care & Social Assistance,Social Assistance,219
-Information,Motion Picture & Sound Recording Industries,9
-Information,Other Information Services,2
-Information,Publishing Industries (except Internet),1
-Information,Telecommunications,6
-Management of Companies & Enterprises,Management of Companies & Enterprises,18
-Manufacturing,Beverage & Tobacco Product Manufacturing,3
-Manufacturing,Chemical Manufacturing,3
-Manufacturing,Computer & Electronic Product Manufacturing,1
-Manufacturing,Fabricated Metal Product Manufacturing,4
-Manufacturing,Food Manufacturing,9
-Manufacturing,Furniture & Related Product Manufacturing,2
-Manufacturing,Machinery Manufacturing,4
-Manufacturing,Miscellaneous Manufacturing,6
-Manufacturing,Nonmetallic Mineral Product Manufacturing,6
-Manufacturing,Paper Manufacturing,1
-Manufacturing,Plastics & Rubber Products Manufacturing,1
-Manufacturing,Primary Metal Manufacturing,2
-Manufacturing,Printing & Related Support Activities,2
-Manufacturing,Textile Product Mills,1
-Manufacturing,Transportation Equipment Manufacturing,3
-Manufacturing,Wood Product Manufacturing,1
-"Mining, Quarrying, & Oil & Gas Extraction",Mining (except Oil & Gas),1
-"Mining, Quarrying, & Oil & Gas Extraction",Support Activities for Mining,1
-Other Services,Personal & Laundry Services,23
-Other Services,Private Households,9
-Other Services,"Religious, Grantmaking, Civic & Similar Organizationss",70
-Other Services,Repair & Maintenance,4
-"Professional, Scientific, & Technical Services","Professional, Scientific & Technical Services",48
-Public Administration,Administration of Environmental Quality Programs,5
-Public Administration,Administration of Human Resource Programs,8
-Public Administration,"Executive, Legislative & Other General Government Support",8
-Public Administration,"Justice, Public Order & Safety",37
-Real Estate & Rental & Leasing,Real Estate,12
-Real Estate & Rental & Leasing,Rental & Leasing Services,12
-Retail,Building Material & Garden Equipment & Supplies Dealers,19
-Retail,Clothing & Clothing Accessories Stores,113
-Retail,Electronics & Appliance Stores,8
-Retail,Food & Beverage Stores,68
-Retail,Furniture & Home Furnishings Stores,1
-Retail,Gasoline Stations,19
-Retail,General Merch&ise Stores,99
-Retail,Health & Personal Care Stores,40
-Retail,Miscellaneous Store Retailers,21
-Retail,Motor Vehicle & Parts Dealers,11
-Retail,Nonstore Retailers,13
-Retail,"Sporting Goods, Hobby, Book & Music Stores",36
-Transportation & Warehousing,Air Transportation,1
-Transportation & Warehousing,Couriers & Messengers,14
-Transportation & Warehousing,Scenic & Sightseeing Transportation,2
-Transportation & Warehousing,Support Activities for Transportation,4
-Transportation & Warehousing,Transit & Ground Passenger Transportation,1
-Transportation & Warehousing,Truck Transportation,4
-Transportation & Warehousing,Warehousing & Storage,7
-Transportation & Warehousing,Water Transportation,1
-Utilities,Utilities,2
-Wholesale Trade,"Merchant Wholesalers, Durable Goods",16
-Wholesale Trade,"Merchant Wholesalers, Nondurable Goods",10
-Wholesale Trade,Wholesale Electronic Markets & Agents & Brokers,9
+naics2_descr,naics3_descr,n,image
+Accommodation & Food Services,Accommodation,67,food.png
+Accommodation & Food Services,Food Services & Drinking Places,376,food.png
+Admin. & Support & Waste Management & Remediation Services,Administrative & Support Services,136,adminsupport.png
+Admin. & Support & Waste Management & Remediation Services,Waste Mangement & Remediation Services,3,adminsupport.png
+"Agriculture, Forestry, Fishing & Hunting",Animal production,2,agriculture.png
+"Agriculture, Forestry, Fishing & Hunting",Crop production,3,agriculture.png
+"Arts, Entertainment, & Recreation","Amusement, Gambling & Recreation",143,arts.png
+"Arts, Entertainment, & Recreation","Museums, Historical Sites & Similar Institutions",14,arts.png
+"Arts, Entertainment, & Recreation","Performing Arts, Spectator Sports & Other",12,arts.png
+Construction,Construction of Buildings,5,construction.png
+Construction,Specialty Trade Contractors,15,construction.png
+Education,Educational Services,1808,education.png
+Finance & Insurance,Credit Intermediation & Related Activities,22,finance.png
+Finance & Insurance,"Funds, Trusts & Other Financial Vehicles",1,finance.png
+Finance & Insurance,Insurance Carriers & Other,12,finance.png
+Finance & Insurance,"Securities, Commodity Contracts & Other Financial Investments & Related Activities",4,finance.png
+Health Care & Social Assistance,Ambulatory Health Care Services,86,healthcare.png
+Health Care & Social Assistance,Hospitals,23,healthcare.png
+Health Care & Social Assistance,Nursing & Residential Care Facilities,46,healthcare.png
+Health Care & Social Assistance,Social Assistance,219,healthcare.png
+Information,Motion Picture & Sound Recording Industries,9,information.png
+Information,Other Information Services,2,information.png
+Information,Publishing Industries (except Internet),1,information.png
+Information,Telecommunications,6,information.png
+Management of Companies & Enterprises,Management of Companies & Enterprises,18,management.png
+Manufacturing,Beverage & Tobacco Product Manufacturing,3,manuf.png
+Manufacturing,Chemical Manufacturing,3,manuf.png
+Manufacturing,Computer & Electronic Product Manufacturing,1,manuf.png
+Manufacturing,Fabricated Metal Product Manufacturing,4,manuf.png
+Manufacturing,Food Manufacturing,9,manuf.png
+Manufacturing,Furniture & Related Product Manufacturing,2,manuf.png
+Manufacturing,Machinery Manufacturing,4,manuf.png
+Manufacturing,Miscellaneous Manufacturing,6,manuf.png
+Manufacturing,Nonmetallic Mineral Product Manufacturing,6,manuf.png
+Manufacturing,Paper Manufacturing,1,manuf.png
+Manufacturing,Plastics & Rubber Products Manufacturing,1,manuf.png
+Manufacturing,Primary Metal Manufacturing,2,manuf.png
+Manufacturing,Printing & Related Support Activities,2,manuf.png
+Manufacturing,Textile Product Mills,1,manuf.png
+Manufacturing,Transportation Equipment Manufacturing,3,manuf.png
+Manufacturing,Wood Product Manufacturing,1,manuf.png
+"Mining, Quarrying, & Oil & Gas Extraction",Mining (except Oil & Gas),1,mining.png
+"Mining, Quarrying, & Oil & Gas Extraction",Support Activities for Mining,1,mining.png
+Other Services,Personal & Laundry Services,23,other.png
+Other Services,Private Households,9,other.png
+Other Services,"Religious, Grantmaking, Civic & Similar Organizationss",70,other.png
+Other Services,Repair & Maintenance,4,other.png
+"Professional, Scientific, & Technical Services","Professional, Scientific & Technical Services",48,science.png
+Public Administration,Administration of Environmental Quality Programs,5,government.png
+Public Administration,Administration of Human Resource Programs,8,government.png
+Public Administration,"Executive, Legislative & Other General Government Support",8,government.png
+Public Administration,"Justice, Public Order & Safety",37,government.png
+Real Estate & Rental & Leasing,Real Estate,12,realestate.png
+Real Estate & Rental & Leasing,Rental & Leasing Services,12,realestate.png
+Retail,Building Material & Garden Equipment & Supplies Dealers,19,retail.png
+Retail,Clothing & Clothing Accessories Stores,113,retail.png
+Retail,Electronics & Appliance Stores,8,retail.png
+Retail,Food & Beverage Stores,68,retail.png
+Retail,Furniture & Home Furnishings Stores,1,retail.png
+Retail,Gasoline Stations,19,retail.png
+Retail,General Merch&ise Stores,99,retail.png
+Retail,Health & Personal Care Stores,40,retail.png
+Retail,Miscellaneous Store Retailers,21,retail.png
+Retail,Motor Vehicle & Parts Dealers,11,retail.png
+Retail,Nonstore Retailers,13,retail.png
+Retail,"Sporting Goods, Hobby, Book & Music Stores",36,retail.png
+Transportation & Warehousing,Air Transportation,1,transportation.png
+Transportation & Warehousing,Couriers & Messengers,14,transportation.png
+Transportation & Warehousing,Scenic & Sightseeing Transportation,2,transportation.png
+Transportation & Warehousing,Support Activities for Transportation,4,transportation.png
+Transportation & Warehousing,Transit & Ground Passenger Transportation,1,transportation.png
+Transportation & Warehousing,Truck Transportation,4,transportation.png
+Transportation & Warehousing,Warehousing & Storage,7,transportation.png
+Transportation & Warehousing,Water Transportation,1,transportation.png
+Utilities,Utilities,2,utilities.png
+Wholesale Trade,"Merchant Wholesalers, Durable Goods",16,wtrade.png
+Wholesale Trade,"Merchant Wholesalers, Nondurable Goods",10,wtrade.png
+Wholesale Trade,Wholesale Electronic Markets & Agents & Brokers,9,wtrade.png
