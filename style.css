@@ -192,3 +192,7 @@ a{
     text-decoration: none;
 	color: hotpink;
 }
+
+#secondtitle{
+	padding-top: 100px!important;
+}
