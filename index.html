@@ -24,7 +24,7 @@
                                             height="80px"
                                             width="80px" /> 
      <div class="w3-center" id="textheader">                                       
-    <p class ="w3-center w3-text-white" id="byline"> The job market can be tough. Patton College is committed to supporting students until they have found jobs where they can apply their knowledge and skills. </p>
+    <p class ="w3-center w3-text-white" id="byline"> The job market can be tough. The Patton College is committed to supporting students until they have found jobs where they can apply their knowledge and skills. </p>
   </div>
 </div>
 </div>
@@ -97,10 +97,9 @@
           <p>The chart on the left shows the percentage of graduates accepting employment within six months and twelve months. This information can be broken down by year and academic level. As before, the following restrictions apply: </p>
 			  <ul>
 				  <li>the data include students who graduated between 2013 and 2016</li>
-				  <li>graduates who left Ohio are not captured in this analysis</li>
+				  <li>graduates who left Ohio are not captured in this analysis; differences in employment rates between graduate and undegraduate students is due to the significant percentage of <b><i>nonresident</b></i> students at the graduate level (37% vs 8%), many of whom return to their home state or country after graduation.</li>
 				  <li>the data include both full-time and part-time employment</li>
 				  <li>self-employed and those employed by the federal government are excluded </li>
-          <li>difference in employment rates between graduate and undegraduate students is due to the significant percentage of nonresident students at the graduate level (37% vs 8%), many of whom return to their home state or country after graduation.</li>
 			</ul>
         
     </div>
@@ -352,7 +351,7 @@ var barviz = d3plus.viz().container("#bar");
   console.log(temp);
   temp.forEach(function(d) {
     d3.keys(d).forEach(function(k){
-      if(k == "College"){
+      if(k == "Undergraduate"){
         d[k] = +d[k]
       }
     })
@@ -362,7 +361,7 @@ var barviz = d3plus.viz().container("#bar");
       .type("bar")
       .id("Year")
       .x({'value' : 'Period', 'label': {'font':{'size':16}}})
-      .y( "College")
+      .y( "Undergraduate")
       .time({"value": "Year", "solo": 2016})
       .font( {"size":14, 
                "family": "Raleway, sans-serif" } )
@@ -370,7 +369,7 @@ var barviz = d3plus.viz().container("#bar");
       {
         "label" : "Select Level",
         "type" : "button",
-        "value" : [{"College":"College"},{"Undergraduate":"Undergraduate"}, {"Graduate":"Graduate"}],
+        "value" : [{"Undergraduate":"Undergraduate"}, {"Graduate":"Graduate"},{"College":"College"}],
         "method" : function(value, viz){
         if(value == "College"){
           viz.data("employfinal.csv");
@@ -403,7 +402,7 @@ var barviz = d3plus.viz().container("#bar");
         })
       .tooltip({"font" : { "family": "Raleway, sans-serif"} })
       .tooltip({"sub": "notes"})
-      .text("College")
+      .text("Undergraduate")
       .draw()
 
        
