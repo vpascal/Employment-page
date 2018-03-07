@@ -77,8 +77,10 @@
 
 <div class="w3-container w3-padding-32" id="about">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Where do they work?</h3>
-    <p>The interactive chart below shows the range of sectors and subsectors of the economy, which employ our alumni. The industries are based on the North American Industry Classification System (NAICS), a standardized industry classification system used by federal statistical agencies. NAICS offers different levels of detail. NAICS 2 digit level provide a higher level of aggregation whereas NAICS 3 level offers narrower i.e. more detailed description. Numbers on the graph refer to the percentage of graduates employed in a particular sector or industry. Due to confidentiality restrictions, not all information can be displayed and therefore it is suppressed. It is important to remember this is a snapshot of our alumni. It is based on the number of students who graduated from Patton College between 2013 and 2016 and remained in Ohio. Graduates who left the state are therefore not included. Similarly, self-employed and those employed by the federal government are excluded.
-    </p>
+    <p>The interactive chart below shows the range of sectors and subsectors of the economy, which employ our alumni. The industries are based on the <b><i><a href='https://www.census.gov/eos/www/naics/index.html' target="_blank">North American Industry Classification System (NAICS)</a></b></i>, a standardized industry classification system used by federal statistical agencies. NAICS offers different levels of detail. NAICS 2 digit level provide a higher level of aggregation whereas NAICS 3 level offers narrower i.e. more detailed description. Numbers on the graph refer to the percentage of graduates employed in a particular sector or industry.<p>
+    <p> Data for this study were obtained from the Ohio Longitudinal Data Archive (OLDA). The OLDA is a data repository that is comprised of public administrative records on education, work, and training experiences of Ohio residents over time. The OLDA is a project of the <b><i><a href="http://oerc.osu.edu/" target="_blank">Ohio Education Research Center </a></b></i>.</p>
+
+  <p>Due to confidentiality restrictions, not all information can be displayed and therefore it is suppressed. It is important to remember this is a snapshot of our alumni. It is based on the number of students who graduated from Patton College between 2013 and 2016 and remained in Ohio. Graduates who left the state are therefore not included. Similarly, self-employed and those employed by the federal government are excluded.</p>
   </div>
 
  <div class="w3-padding-16" id="treemap">
@@ -101,17 +103,20 @@
 				  <li>the data include both full-time and part-time employment</li>
 				  <li>self-employed and those employed by the federal government are excluded </li>
 			</ul>
-        
     </div>
   </div>
+      <a class='mylinks' href="http://oerc.osu.edu/" target="_blank">Source: Ohio Education Center</a>
+
  <div class="w3-row w3-padding-16">
   <br>
   <br>
   <h4 class="w3-center"> INDUSTRIES PROJECTED TO GROW/DECLINE IN OHIO BETWEEN 2016 AND 2018</h4>
     <hr>
-    <div  class="w3-col" style="width:50%" id='ohio'></div>
-    <div  class="w3-col" style="width:50%" id='ohiodetail'></div>
-    <p class='w3-center' id ='source'>Source: Ohio Department of Job and Family Services, Bureau of Labor Market Information</p>
+    <div class="w3-col" style="width:50%" id='ohio'></div>
+    <div class="w3-col" style="width:50%" id='ohiodetail'></div>
+    <div class='w3-center'>
+    <a class='w3-center mylinks' href="http://ohiolmi.com/proj/projections.htm" target="_blank">Source: Ohio Department of Job and Family Services, Bureau of Labor Market Information</a>
+  </div>
  </div>
  
 <script type="text/javascript">
@@ -251,9 +256,9 @@ var png = [
       .tooltip({"font" : { "family": "Raleway, sans-serif"} })
       .attrs(png)
       .color('hex')
-	  .footer("Source: Ohio Education Research Center ")
+	    .footer({"value" : "Source: Ohio Education Research Center", "link": "http://oerc.osu.edu/"})
       .tooltip({"sub": "desc"})
-	  .title("Click to drill down and Back to return")
+	    .title("Click to drill down and Back to return")
       .icon({
            "style": "knockout",
            "value": "image"
@@ -391,7 +396,7 @@ var barviz = d3plus.viz().container("#bar");
        ])
       .title("Percent Employed")
       .title({
-      "sub": "Within one year and within six months after graduation.",
+      "sub": "Within six months and within one year after graduation.",
       "total": false
     })
       .title({
@@ -402,6 +407,7 @@ var barviz = d3plus.viz().container("#bar");
         })
       .tooltip({"font" : { "family": "Raleway, sans-serif"} })
       .tooltip({"sub": "notes"})
+      .order({"value": "Period"})
       .text("Undergraduate")
       .draw()
 

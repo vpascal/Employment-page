@@ -182,15 +182,19 @@ p {
       padding-left: 10px;
 }
 
-#source{
+#source, .mylinks{
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
   
 }
 
 a{
-    text-decoration: none;
-	color: hotpink;
+  text-decoration: none;
+	color: black;
+}
+
+a:hover {
+    color: hotpink;
 }
 
 #secondtitle{
