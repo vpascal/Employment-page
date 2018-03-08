@@ -200,3 +200,9 @@ a:hover {
 #secondtitle{
 	padding-top: 100px!important;
 }
+
+.alert{
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+}

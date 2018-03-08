@@ -99,7 +99,7 @@
           <p>The chart on the left shows the percentage of graduates accepting employment within six months and twelve months. This information can be broken down by year and academic level. As before, the following restrictions apply: </p>
 			  <ul>
 				  <li>the data include students who graduated between 2013 and 2016</li>
-				  <li>graduates who left Ohio are not captured in this analysis; differences in employment rates between graduate and undegraduate students is due to the significant percentage of <b><i>nonresident</b></i> students at the graduate level (37% vs 8%), many of whom return to their home state or country after graduation.</li>
+				  <li id='alert'>graduates who left Ohio are not captured in this analysis; differences in employment rates between graduate and undegraduate students is due to the significant percentage of nonresident students at the graduate level (37% vs 8%), many of whom return to their home state or country after graduation.</li>
 				  <li>the data include both full-time and part-time employment</li>
 				  <li>self-employed and those employed by the federal government are excluded </li>
 			</ul>
@@ -122,21 +122,22 @@
 <script type="text/javascript">
 jQuery(document).ready(function(){
     jQuery(".titleWrapper").addClass("ready");
+
+    jQuery(".titleWrapper h1").each(function(){
+      var fullString;
+      var characters = jQuery(this).text().split("");
     
-jQuery(".titleWrapper h1").each(function(){
-    var fullString;
-    var characters = jQuery(this).text().split("");
-    
-    $this = jQuery(this);
-    $this.empty();
-    $.each(characters, function (i, el) {
+      $this = jQuery(this);
+      $this.empty();
+      $.each(characters, function (i, el) {
         if(el == " "){el = "&nbsp;"};
-    $this.append("<span>" + el + "</span");
+      $this.append("<span>" + el + "</span");
     });
         
 });
     
 });
+
 
 
 var png = [
@@ -257,7 +258,7 @@ var png = [
       .attrs(png)
       .color('hex')
 	    .footer({"value" : "Source: Ohio Education Research Center", "link": "http://oerc.osu.edu/"})
-      .tooltip({"sub": "desc"})
+      .tooltip({"sub": "description"})
 	    .title("Click to drill down and Back to return")
       .icon({
            "style": "knockout",
@@ -379,16 +380,19 @@ var barviz = d3plus.viz().container("#bar");
         if(value == "College"){
           viz.data("employfinal.csv");
           viz.y({"value": "College"})
+          jQuery("#alert").removeClass("alert");
           viz.text({"value":"College"}).draw();
         }
         else if (value == "Undergraduate"){
           viz.data("employfinal.csv");
           viz.y({"value": "Undergraduate"})
+          jQuery("#alert").removeClass("alert");
           viz.text({"value":"Undergraduate"}).draw();
         }
         else {
           viz.data("employfinal.csv");
           viz.y({"value": "Graduate"})
+          jQuery("#alert").addClass("alert");
           viz.text({"value":"Graduate"}).draw();
         }
         }
