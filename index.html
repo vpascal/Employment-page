@@ -18,7 +18,7 @@
 <img class="w3-image " src="w3images/main2.jpg"> 
 <div id="color-overlay"></div>
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white w3-padding" id="logo"> Planning your Future</h1>
+    <h1 class="w3-xxlarge w3-text-white w3-padding" id="logo">Planning your Future</h1>
     <img  id="gauge"
                                             src="graduation.svg" 
                                             height="80px"
@@ -84,7 +84,7 @@
   </div>
 
  <div class="w3-padding-16" id="treemap">
-  <h4 class="w3-center"> PCOE: GRADUATES - EMPLOYMENT BY SECTOR</h4>
+  <h4 class="w3-center"> PCOE: GRADUATES - OHIO EMPLOYMENT BY SECTOR</h4>
    <hr>
 </div>
  <br>
@@ -100,9 +100,8 @@
           <h2>Important Caveats</h2>
           <p>The chart on the left shows the percentage of graduates accepting employment within six and twelve months. This information can be broken down by year and academic level. As before, the following restrictions apply: </p>
 			  <ul>
-				  <li>the data include students who graduated between 2013 and 2016.</li>
-				  <li id='alert'>graduates who left Ohio are not captured in this analysis; differences in employment rates between graduate and undegraduate students is due to the significant percentage of nonresident students at the graduate level (37% vs 8%), many of whom return to their home state or country after graduation. Further, some students will pursue advanced degrees.</li>
-				  <li>the data include both full-time and part-time employment; self-employed and those employed by the federal government are excluded.</li>
+				   <li id='alert'>graduates who left Ohio are not captured in this analysis; differences in employment rates between graduate and undegraduate students is due to the significant percentage of nonresident students at the graduate level (37% vs 8%), many of whom return to their home state or country after graduation. <span class = 'alert' id='alert2'>Further, students who pursue advanced degrees are not included.</span></li>
+				  <li>the data include students who graduated between 2013 and 2016 working both full-time and part-time; self-employed and those employed by the federal government are excluded.</li>
 			</ul>
     </div>
   </div>
@@ -121,6 +120,7 @@
  </div>
  
 <script type="text/javascript">
+
 jQuery(document).ready(function(){
     jQuery(".titleWrapper").addClass("ready");
 
@@ -139,6 +139,8 @@ jQuery(document).ready(function(){
     
 });
 
+
+// logos for treemap
 
 var png = [
   {
@@ -244,7 +246,7 @@ var png = [
   }
 ]
 
-  //naics description
+//naics description: provides sector description under treemap
 
 function naics_info(){
     d3.csv('description.csv', function(data){
@@ -260,6 +262,8 @@ function naics_info(){
          .text(function(d){return d.description});
     });
   }
+
+// treemap
 
   var visualization = d3plus.viz()
       .container('#treemap')
@@ -310,7 +314,7 @@ function naics_info(){
      .draw()
        
 
-// ohio bar chart
+// Growing& declining industries in OH
 
 var ohioviz = d3plus.viz().container("#ohio");
   d3.csv("ohio.csv", function(error, temp) {
@@ -350,8 +354,7 @@ var ohioviz = d3plus.viz().container("#ohio");
 })
 
 
-
-// ohio bar chart detail
+// ohio barchart detail
 var ohiodetail = d3plus.viz()
       .container("#ohiodetail")
       .data('sectors.csv')
@@ -368,7 +371,8 @@ var ohiodetail = d3plus.viz()
     
 ohiodetail.draw();
   
-//chart bar
+  
+//percent employed chart
 
 var barviz = d3plus.viz().container("#bar");
   d3.csv("employfinal.csv", function(error, temp) {
@@ -400,12 +404,14 @@ var barviz = d3plus.viz().container("#bar");
           viz.data("employfinal.csv");
           viz.y({"value": "College"})
           jQuery("#alert").removeClass("alert");
+          jQuery("#alert2").removeClass("alert");
           viz.text({"value":"College"}).draw();
         }
         else if (value == "Undergraduate"){
           viz.data("employfinal.csv");
           viz.y({"value": "Undergraduate"})
           jQuery("#alert").removeClass("alert");
+          jQuery("#alert2").addClass("alert");
           viz.text({"value":"Undergraduate"}).draw();
         }
         else {

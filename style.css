@@ -201,7 +201,7 @@ a:hover {
 	padding-top: 100px!important;
 }
 
-.alert{
+.alert, .alert2{
   color: red;
   font-weight: bold;
   font-style: italic;
