@@ -89,6 +89,8 @@
 </div>
  <br>
  <br>
+ <div id ='naics'>
+ </div>
  <h4 class="w3-center w3-padding-16" id ='secondtitle'> PCOE: GRADUATES - PERCENT EMPLOYED</h4>
  <hr>
  <div class="w3-row w3-padding-32">
@@ -137,7 +139,6 @@ jQuery(document).ready(function(){
 });
     
 });
-
 
 
 var png = [
@@ -244,6 +245,22 @@ var png = [
   }
 ]
 
+  //naics description
+
+function naics_info(){
+    d3.csv('description.csv', function(data){
+      newset = data.filter(function(d){ return d.name == naics;});
+
+      document.getElementById('naics').innerHTML = "";
+
+      d3.select('#naics')
+         .selectAll('p')
+         .data(newset)
+         .enter()
+         .append('p')
+         .text(function(d){return d.description});
+    });
+  }
 
   var visualization = d3plus.viz()
       .container('#treemap')
@@ -267,8 +284,11 @@ var png = [
       .mouse({            
         
         "click": function(value, viz){
+        naics = value.naics2_descr;
+        console.log (naics); 
+        naics_info(); 
         if (value.naics2_descr != "Information" & value.naics2_descr!='Manufacturing')  {return true;}
-     
+
       }  
     })
       .ui([
