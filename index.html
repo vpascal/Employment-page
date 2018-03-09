@@ -119,6 +119,15 @@
   </div>
  </div>
  
+ <div class="w3-row w3-padding-16">
+  <br>
+  <br>
+  <h4 class="w3-center">AVERAGE ANNUAL WAGES IN OHIO BY SECTOR: 2016</h4>
+    <hr>
+    <div id='wages'></div>
+    <br>
+    <br>
+ </div> 
 <script type="text/javascript">
 
 jQuery(document).ready(function(){
@@ -371,7 +380,7 @@ var ohiodetail = d3plus.viz()
     
 ohiodetail.draw();
   
-  
+
 //percent employed chart
 
 var barviz = d3plus.viz().container("#bar");
@@ -435,6 +444,7 @@ var barviz = d3plus.viz().container("#bar");
                       }
         })
       .tooltip({"font" : { "family": "Raleway, sans-serif"} })
+      .tooltip(['value','Year'])
       .tooltip({"sub": "notes"})
       .order({"value": "Period"})
       .text("Undergraduate")
@@ -443,7 +453,44 @@ var barviz = d3plus.viz().container("#bar");
        
 })
 
+// Average Wages
 
+
+var wages = d3plus.viz().container("#wages");
+  d3.csv("wages.csv", function(error, temp) {
+  if (error) return console.error(error);
+  console.log(temp);
+  temp.forEach(function(d) {
+    d3.keys(d).forEach(function(k){
+      if(k == "wage"){
+        d[k] = +d[k]
+      }
+    })
+  })
+   wages
+      .data(temp)
+      .type("bar")
+      .id("industry")
+      .x({'value' : 'industry', 'label': {'font':{'size':12}}})
+      .y( "wage")
+      .font( {"size":12, 
+               "family": "Raleway, sans-serif" } )
+      
+      .title({
+      "sub": "Statewide",
+      "total": false
+    })
+      .title({
+          "font" : { "family": "Montserrat, sans-serif",
+                      "size" : 16,
+                      "transform" : "uppercase"
+                      }
+        })
+      .tooltip({"font" : { "family": "Raleway, sans-serif"} })
+      .order({"value": "wage"})
+      .text("industry")
+      .draw()
+    })
 
 </script>
 
