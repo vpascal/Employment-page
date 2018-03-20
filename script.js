@@ -24,7 +24,7 @@ var png = [
   {
     "naics2_descr": "Accommodation & Food Services",
     "image": "food.png",
-    "hex": "#3F6662"
+    "hex": "#ff7b22"
   },
   {
     "naics2_descr": "Admin. & Support & Waste Management & Remediation Services",
@@ -44,13 +44,13 @@ var png = [
   {
     "naics2_descr": "Construction",
     "image": "construction.png",
-    "hex": "#C45532"
+    "hex": "#ba044f"
 
   },
   {
     "naics2_descr": "Education",
     "image": "education.png",
-    "hex": "#F24747"
+    "hex": "#00694E"
   },
   {
     "naics2_descr": "Finance & Insurance",
