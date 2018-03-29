@@ -220,3 +220,10 @@ a:hover {
 #d3plus_share_Education_rect{
   fill: #F3F3F4;
 }
+
+#scroll{
+  color: white;
+  font-weight: 100;
+  font-size: x-small;
+
+}
