@@ -301,7 +301,7 @@ var barviz = d3plus.viz().container("#bar");
         }
       }
        ])
-      .title("Percent Employed (of those who remained in Ohio)")
+      .title("Percent of All Graduates Employed in Ohio")
       .title({
       "sub": "Within six months and within one year after graduation.",
       "total": false
