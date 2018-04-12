@@ -331,7 +331,7 @@ var wages = d3plus.viz().container("#wages");
   console.log(temp);
   temp.forEach(function(d) {
     d3.keys(d).forEach(function(k){
-      if(k == "wage"){
+      if(k == "salary"){
         d[k] = +d[k]
       }
     })
@@ -341,7 +341,7 @@ var wages = d3plus.viz().container("#wages");
       .type("bar")
       .id("industry")
       .x({'value' : 'industry', 'label': {'font':{'size':12}}})
-      .y( "wage")
+      .y( "salary")
       .font( {"size":12, 
                "family": "Raleway, sans-serif" } )
       
@@ -356,7 +356,14 @@ var wages = d3plus.viz().container("#wages");
                       }
         })
       .tooltip({"font" : { "family": "Raleway, sans-serif"} })
-      .order({"value": "wage"})
+      .order({"value": "salary"})
       .text("industry")
+      .format({
+        'number': function(number,params){
+          
+          return "$"+ number.toLocaleString();
+        }
+
+      })
       .draw()
     })
