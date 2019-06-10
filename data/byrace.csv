@@ -1,7 +1,6 @@
 Year,Race,Period,Percent,color
 2013,Black or African American,Within six months,73.7,#003f5c
 2013,Hispanic/Latino,Within six months,46.2,#374c80
-2013,Multiracial,Within six months,0,#ffa600
 2013,Nonresident alien,Within six months,41.2,#7a5195
 2013,Other,Within six months,90,#bc5090
 2013,Unknown/Missing,Within six months,72.7,#ef5675
@@ -29,7 +28,6 @@ Year,Race,Period,Percent,color
 2016,White,Within six months,75.1,#ff764a
 2013,Black or African American,Within one year,73.7,#003f5c
 2013,Hispanic/Latino,Within one year,53.8,#374c80
-2013,Multiracial,Within one year,0,#ffa600
 2013,Nonresident alien,Within one year,41.2,#7a5195
 2013,Other,Within one year,90,#bc5090
 2013,Unknown/Missing,Within one year,72.7,#ef5675
