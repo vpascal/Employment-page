@@ -15,8 +15,7 @@ d3.csv("data/byrace.csv", function(error, temp) {
         .x({ 'value': 'Period', 'label': { 'font': { 'size': 16 } } })
         .y({ 'value': "Percent", 'range': [0, 100] })
         .time({ "value": "Year", "solo": 2016, 'fixed': true })
-        .color('Race')
-        .text('Race')
+        .color({ 'value': 'Percent' })
         .font({
             "size": 14,
             "family": "Raleway, sans-serif"

@@ -1,55 +1,57 @@
-Year,Race,Period,Percent
-2013,Black or African American,Within six months,73.7
-2013,Hispanic/Latino,Within six months,46.2
-2013,Nonresident alien,Within six months,41.2
-2013,Other,Within six months,90
-2013,Unknown/Missing,Within six months,72.7
-2013,White,Within six months,76.6
-2014,Black or African American,Within six months,52.5
-2014,Hispanic/Latino,Within six months,45
-2014,Multiracial,Within six months,86.7
-2014,Nonresident alien,Within six months,27.3
-2014,Other,Within six months,88.9
-2014,Unknown/Missing,Within six months,80.8
-2014,White,Within six months,75.8
-2015,Black or African American,Within six months,41.2
-2015,Hispanic/Latino,Within six months,50
-2015,Multiracial,Within six months,77.8
-2015,Nonresident alien,Within six months,9.1
-2015,Other,Within six months,75
-2015,Unknown/Missing,Within six months,87.5
-2015,White,Within six months,77
-2016,Black or African American,Within six months,45.8
-2016,Hispanic/Latino,Within six months,69.2
-2016,Multiracial,Within six months,87.5
-2016,Nonresident alien,Within six months,24.4
-2016,Other,Within six months,42.9
-2016,Unknown/Missing,Within six months,45.5
-2016,White,Within six months,75.1
-2013,Black or African American,Within one year,73.7
-2013,Hispanic/Latino,Within one year,53.8
-2013,Nonresident alien,Within one year,41.2
-2013,Other,Within one year,90
-2013,Unknown/Missing,Within one year,72.7
-2013,White,Within one year,78.3
-2014,Black or African American,Within one year,57.5
-2014,Hispanic/Latino,Within one year,45
-2014,Multiracial,Within one year,86.7
-2014,Nonresident alien,Within one year,27.3
-2014,Other,Within one year,88.9
-2014,Unknown/Missing,Within one year,84.6
-2014,White,Within one year,78.2
-2015,Black or African American,Within one year,41.2
-2015,Hispanic/Latino,Within one year,50
-2015,Multiracial,Within one year,77.8
-2015,Nonresident alien,Within one year,9.1
-2015,Other,Within one year,75
-2015,Unknown/Missing,Within one year,87.5
-2015,White,Within one year,78.9
-2016,Black or African American,Within one year,45.8
-2016,Hispanic/Latino,Within one year,69.2
-2016,Multiracial,Within one year,87.5
-2016,Nonresident alien,Within one year,24.4
-2016,Other,Within one year,42.9
-2016,Unknown/Missing,Within one year,45.5
-2016,White,Within one year,76.4
+Year,Race,Period,Percent,color
+2013,Black or African American,Within six months,73.7,#003f5c
+2013,Hispanic/Latino,Within six months,46.2,#374c80
+2014,Multiracial,Within six months,0,#ffa600
+2013,Nonresident alien,Within six months,41.2,#7a5195
+2013,Other,Within six months,90,#bc5090
+2013,Unknown/Missing,Within six months,72.7,#ef5675
+2013,White,Within six months,76.6,#ff764a
+2014,Black or African American,Within six months,52.5,#003f5c
+2014,Hispanic/Latino,Within six months,45,#374c80
+2014,Multiracial,Within six months,86.7,#ffa600
+2014,Nonresident alien,Within six months,27.3,#7a5195
+2014,Other,Within six months,88.9,#bc5090
+2014,Unknown/Missing,Within six months,80.8,#ef5675
+2014,White,Within six months,75.8,#ff764a
+2015,Black or African American,Within six months,41.2,#003f5c
+2015,Hispanic/Latino,Within six months,50,#374c80
+2015,Multiracial,Within six months,77.8,#ffa600
+2015,Nonresident alien,Within six months,9.1,#7a5195
+2015,Other,Within six months,75,#bc5090
+2015,Unknown/Missing,Within six months,87.5,#ef5675
+2015,White,Within six months,77,#ff764a
+2016,Black or African American,Within six months,45.8,#003f5c
+2016,Hispanic/Latino,Within six months,69.2,#374c80
+2016,Multiracial,Within six months,87.5,#ffa600
+2016,Nonresident alien,Within six months,24.4,#7a5195
+2016,Other,Within six months,42.9,#bc5090
+2016,Unknown/Missing,Within six months,45.5,#ef5675
+2016,White,Within six months,75.1,#ff764a
+2013,Black or African American,Within one year,73.7,#003f5c
+2013,Hispanic/Latino,Within one year,53.8,#374c80
+2013,Multiracial,Within one year,0,#ffa600
+2013,Nonresident alien,Within one year,41.2,#7a5195
+2013,Other,Within one year,90,#bc5090
+2013,Unknown/Missing,Within one year,72.7,#ef5675
+2013,White,Within one year,78.3,#ff764a
+2014,Black or African American,Within one year,57.5,#003f5c
+2014,Hispanic/Latino,Within one year,45,#374c80
+2014,Multiracial,Within one year,86.7,#ffa600
+2014,Nonresident alien,Within one year,27.3,#7a5195
+2014,Other,Within one year,88.9,#bc5090
+2014,Unknown/Missing,Within one year,84.6,#ef5675
+2014,White,Within one year,78.2,#ff764a
+2015,Black or African American,Within one year,41.2,#003f5c
+2015,Hispanic/Latino,Within one year,50,#374c80
+2015,Multiracial,Within one year,77.8,#ffa600
+2015,Nonresident alien,Within one year,9.1,#7a5195
+2015,Other,Within one year,75,#bc5090
+2015,Unknown/Missing,Within one year,87.5,#ef5675
+2015,White,Within one year,78.9,#ff764a
+2016,Black or African American,Within one year,45.8,#003f5c
+2016,Hispanic/Latino,Within one year,69.2,#374c80
+2016,Multiracial,Within one year,87.5,#ffa600
+2016,Nonresident alien,Within one year,24.4,#7a5195
+2016,Other,Within one year,42.9,#bc5090
+2016,Unknown/Missing,Within one year,45.5,#ef5675
+2016,White,Within one year,76.4,#ff764a
