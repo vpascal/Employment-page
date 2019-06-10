@@ -3,10 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-
-h3{
-  font-family: 'Montserrat', sans-serif;
+h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .w3-xxlarge {
@@ -18,154 +16,121 @@ h3{
 }
 
 p {
-
-	font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #color-overlay {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: black;
-   opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
 }
 
 #byline {
-
     margin-top: 25px;
-
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: white;
     padding-bottom: 10px;
-
     border-top-style: solid;
     border-top-width: 1px;
     border-top-color: white;
     padding-top: 10px;
-  }
-
+}
 
 @media screen and (min-width: 1900px) {
-  #textheader {
-    width: 75%;
-  }
+    #textheader {
+        width: 75%;
+    }
 }
 
-
-@media screen and (max-width:1025px) { 
-
-
-.w3-xxlarge {
-    font-size: 32px!important;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 33px;
-    font-weight: 700;
+@media screen and (max-width:1025px) {
+    .w3-xxlarge {
+        font-size: 32px!important;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 33px;
+        font-weight: 700;
+    }
 }
 
-
- }
-
-
-
-@media screen and (max-width:1000px) { 
-
-
-.w3-xxlarge {
-    font-size: 32px!important;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 33px;
-    font-weight: 700;
+@media screen and (max-width:1000px) {
+    .w3-xxlarge {
+        font-size: 32px!important;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 33px;
+        font-weight: 700;
+    }
+    #textheader {
+        display: none;
+    }
+    #gauge {
+        display: none;
+    }
 }
 
 #textheader {
-  display: none;
-}
-#gauge  {
-  display: none;
-}
-
- }
-
-
-#textheader{
-
-  margin: auto;
-
+    margin: auto;
 }
 
 .text {
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  color: #fff;
-  text-transform: uppercase;
-  white-space: nowrap;
-  opacity: .25;
-  animation: pulse 2s linear alternate infinite;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: .25;
+    animation: pulse 2s linear alternate infinite;
 }
 
 .w3-display-middle {
     top: 40%;
-  }
+}
 
 
 /* size of containers */
 
-
 #treemap {
-
- height: 450px; 
-
-} 
-
-#bar {
-
- height: 500px; 
-
-} 
-
-#ohio{
-  height: 600px;
-
+    height: 450px;
 }
 
-
-#ohiodetail{
-
-  height: 600px;
-
+#bar,
+#byrace {
+    height: 500px;
 }
 
+#ohio {
+    height: 600px;
+}
+
+#ohiodetail {
+    height: 600px;
+}
 
 #mylegend {
-  font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 5px; 
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
-#levelcontrol{
-
-  margin-top: 15px;
+#levelcontrol {
+    margin-top: 15px;
 }
 
-#level{
-  font-family: 'Raleway', sans-serif;
-  font-size: 12px;
+#level {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
 }
 
 .datasource {
-
-  margin-top: 15px;
-  
-  
+    margin-top: 15px;
 }
-
 
 #mylegend {
     display: block;
@@ -177,53 +142,50 @@ p {
     border-bottom: 0px;
 }
 
-#notes{
-
-      padding-left: 10px;
+#notes {
+    padding-left: 10px;
 }
 
-#source, .mylinks{
-  font-family: 'Raleway', sans-serif;
-  font-size: 12px;
-  
+#source,
+.mylinks {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
 }
 
-a{
-  text-decoration: none;
-	color: black;
+a {
+    text-decoration: none;
+    color: black;
 }
 
 a:hover {
     color: hotpink;
 }
 
-#secondtitle{
-	padding-top: 100px!important;
+#secondtitle {
+    padding-top: 100px!important;
 }
 
-.alert, .alert2{
-  color: red;
-  font-weight: bold;
-  font-style: italic;
+.alert,
+.alert2 {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
 }
 
-#naics{
-
-  padding-top: 55px;
+#naics {
+    padding-top: 55px;
 }
 
 #wages {
-
-  height: 550px;
+    height: 550px;
 }
 
-#d3plus_share_Education_rect{
-  fill: #F3F3F4;
+#d3plus_share_Education_rect {
+    fill: #F3F3F4;
 }
 
-#scroll{
-  color: white;
-  font-weight: 100;
-  font-size: x-small;
-
+#scroll {
+    color: white;
+    font-weight: 100;
+    font-size: x-small;
 }
